@@ -1,10 +1,12 @@
-export default function Button({text}) {
+import { Link } from "react-router-dom";
+
+export default function Button({ text }) {
   return (
-    <a
-      href="#"
+    <Link
+      to="/tours"
       className="inline-block rounded-md border border-transparent bg-blue-500 px-8 py-3 text-center font-medium text-white hover:bg-blue-600"
     >
-      {text}
-    </a>
+      <span>{text}</span>
+    </Link>
   );
 }
