@@ -4,24 +4,23 @@ import Tour from "./components/Tour/tour";
 
 const routes = [
     {
-      path: "/",
-      element: <App />,
-      children: [
-        
-      ],
+        path: "/",
+        element: <App />,
+        children: [],
     },
     {
         path: "tours",
         children: [
-          {
-            index: true,
-            element: <Tours />,
+            {
+                index: true,
+                element: <Tours />,
             },
-          {
-            path: "/tours/:id", 
-            element: <Tour />,
-          },
+            {
+                path: "/tours/:id",
+                element: <Tour />,
+            },
         ],
-      },
-  ];
-  export default routes;
+    },
+];
+
+export default routes;
